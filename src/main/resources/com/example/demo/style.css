@@ -1,0 +1,40 @@
+.active-button{
+    -fx-background-color: #adadad;
+    -fx-background-radius: 0px;
+}
+
+.passive-button{
+    -fx-background-color: #dedede;
+    -fx-background-radius: 0px;
+}
+
+.search-field{
+    -fx-font-family: "Nunito";
+    -fx-font-size: 21px;
+    -fx-border-color: #000000;
+    -fx-background-color: #dedede;
+    -fx-background-radius: 15px;
+    -fx-border-radius: 15px;
+    -fx-border-width: 2px;
+}
+
+.search-button{
+    -fx-background-color: #dedede;
+    -fx-background-radius: 15px;
+    -fx-border-color: #000000;
+    -fx-border-radius: 15px;
+    -fx-border-width: 2px;
+}
+
+.accordion{
+    -fx-background-color: #ffffff;
+}
+
+.titled-pane .title{
+    -fx-background-color: #ffffff;
+    -fx-border-color: #000000;
+    -fx-border-width: 1px 0px 1px 0px;
+}
+.anchor-pane{
+    -fx-background-color: #ffffff;
+}
