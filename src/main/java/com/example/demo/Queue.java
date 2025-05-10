@@ -16,6 +16,9 @@ public class Queue {
     }
     public void clear(){head=null;}
 
+    public WeatherNode getHead(){
+        return head;
+    }
 
 
 
