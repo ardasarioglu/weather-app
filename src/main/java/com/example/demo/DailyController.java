@@ -107,13 +107,30 @@ public class DailyController {
             JSONArray precProbability=daily.getJSONArray("precipitation_probability_max");
 
 
-            button1.setText(times.getString(0).substring(times.getString(0).length()-2));
-            button2.setText(times.getString(1).substring(times.getString(1).length()-2));
-            button3.setText(times.getString(2).substring(times.getString(2).length()-2));
-            button4.setText(times.getString(3).substring(times.getString(3).length()-2));
-            button5.setText(times.getString(4).substring(times.getString(4).length()-2));
-            button6.setText(times.getString(5).substring(times.getString(5).length()-2));
-            button7.setText(times.getString(6).substring(times.getString(6).length()-2));
+            String date1[]=times.getString(0).split("-");
+            String date2[]=times.getString(1).split("-");
+            String date3[]=times.getString(2).split("-");
+            String date4[]=times.getString(3).split("-");
+            String date5[]=times.getString(4).split("-");
+            String date6[]=times.getString(5).split("-");
+            String date7[]=times.getString(6).split("-");
+
+            String months[]={"January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"};
+            button1.setWrapText(true);
+            button2.setWrapText(true);
+            button3.setWrapText(true);
+            button4.setWrapText(true);
+            button5.setWrapText(true);
+            button6.setWrapText(true);
+            button7.setWrapText(true);
+
+            button1.setText(months[Integer.parseInt(date1[1])-1]+"\n"+date1[2]);
+            button2.setText(months[Integer.parseInt(date2[1])-1]+"\n"+date2[2]);
+            button3.setText(months[Integer.parseInt(date3[1])-1]+"\n"+date3[2]);
+            button4.setText(months[Integer.parseInt(date4[1])-1]+"\n"+date4[2]);
+            button5.setText(months[Integer.parseInt(date5[1])-1]+"\n"+date5[2]);
+            button6.setText(months[Integer.parseInt(date6[1])-1]+"\n"+date6[2]);
+            button7.setText(months[Integer.parseInt(date7[1])-1]+"\n"+date7[2]);
 
             for(int i=0;i<7;i++){
                 this.queue.addNode(new WeatherNode(weatherCodes.getInt(i), windDirection.getInt(i), minTemperature.getDouble(i), meanTemperature.getDouble(i), maxTemperature.getDouble(i), minApparentTemperature.getDouble(i), meanApparentTemperature.getDouble(i), maxApparentTemperature.getDouble(i), windSpeed.getDouble(i), precProbability.getDouble(i)));
@@ -465,6 +482,7 @@ public class DailyController {
         for(int i=0;i<4;i++){
             head=head.next;
         }
+
         tempLabel.setText((head.getMeanTemp())+" °C");
         maxTempLabel.setText("Max Temperature: "+(head.getMaxTemp())+" °C");
         minTempLabel.setText("Min Temperature: "+(head.getMinTemp())+" °C");

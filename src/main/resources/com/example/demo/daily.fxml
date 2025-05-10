@@ -43,11 +43,11 @@
             </Button>
          </children>
       </HBox>
-      <ScrollPane prefHeight="70.0" prefWidth="450.0">
+      <ScrollPane prefHeight="100.0" prefWidth="450.0">
          <content>
-            <HBox prefHeight="54.0" prefWidth="663.0" spacing="2.0">
+            <HBox prefHeight="85.0" prefWidth="990.0" spacing="2.0">
                <children>
-                  <Button fx:id="button1" mnemonicParsing="false" onAction="#action1" prefHeight="53.0" prefWidth="111.0" styleClass="daily-top-button" stylesheets="@style.css" text="--" textAlignment="JUSTIFY">
+                  <Button fx:id="button1" mnemonicParsing="false" onAction="#action1" prefHeight="85.0" prefWidth="140.0" styleClass="daily-top-button" stylesheets="@style.css" text="--" textAlignment="CENTER">
                      <font>
                         <Font name="Nunito Regular" size="24.0" />
                      </font>
@@ -55,12 +55,7 @@
                         <Insets top="5.0" />
                      </padding>
                   </Button>
-                  <Button fx:id="button2" mnemonicParsing="false" onAction="#action2" prefHeight="53.0" prefWidth="111.0" styleClass="daily-top-button" stylesheets="@style.css" text="--" textAlignment="JUSTIFY">
-                     <font>
-                        <Font name="Nunito Regular" size="24.0" />
-                     </font>
-                  </Button>
-                  <Button fx:id="button3" mnemonicParsing="false" onAction="#action3" prefHeight="53.0" prefWidth="111.0" styleClass="daily-top-button" stylesheets="@style.css" text="--" textAlignment="JUSTIFY">
+                  <Button fx:id="button2" mnemonicParsing="false" onAction="#action2" prefHeight="85.0" prefWidth="140.0" styleClass="daily-top-button" stylesheets="@style.css" text="--" textAlignment="CENTER">
                      <font>
                         <Font name="Nunito Regular" size="24.0" />
                      </font>
@@ -68,7 +63,7 @@
                         <Insets top="5.0" />
                      </padding>
                   </Button>
-                  <Button fx:id="button4" mnemonicParsing="false" onAction="#action4" prefHeight="53.0" prefWidth="111.0" styleClass="daily-top-button" stylesheets="@style.css" text="--" textAlignment="JUSTIFY">
+                  <Button fx:id="button3" mnemonicParsing="false" onAction="#action3" prefHeight="85.0" prefWidth="140.0" styleClass="daily-top-button" stylesheets="@style.css" text="--" textAlignment="CENTER">
                      <font>
                         <Font name="Nunito Regular" size="24.0" />
                      </font>
@@ -76,7 +71,7 @@
                         <Insets top="5.0" />
                      </padding>
                   </Button>
-                  <Button fx:id="button5" mnemonicParsing="false" onAction="#action5" prefHeight="53.0" prefWidth="111.0" styleClass="daily-top-button" stylesheets="@style.css" text="--" textAlignment="JUSTIFY">
+                  <Button fx:id="button4" mnemonicParsing="false" onAction="#action4" prefHeight="85.0" prefWidth="140.0" styleClass="daily-top-button" stylesheets="@style.css" text="--" textAlignment="CENTER">
                      <font>
                         <Font name="Nunito Regular" size="24.0" />
                      </font>
@@ -84,7 +79,7 @@
                         <Insets top="5.0" />
                      </padding>
                   </Button>
-                  <Button fx:id="button6" mnemonicParsing="false" onAction="#action6" prefHeight="53.0" prefWidth="111.0" styleClass="daily-top-button" stylesheets="@style.css" text="--" textAlignment="JUSTIFY">
+                  <Button fx:id="button5" mnemonicParsing="false" onAction="#action5" prefHeight="85.0" prefWidth="140.0" styleClass="daily-top-button" stylesheets="@style.css" text="--" textAlignment="CENTER">
                      <font>
                         <Font name="Nunito Regular" size="24.0" />
                      </font>
@@ -92,7 +87,15 @@
                         <Insets top="5.0" />
                      </padding>
                   </Button>
-                  <Button fx:id="button7" mnemonicParsing="false" onAction="#action7" prefHeight="53.0" prefWidth="111.0" styleClass="daily-top-button" stylesheets="@style.css" text="--" textAlignment="JUSTIFY">
+                  <Button fx:id="button6" mnemonicParsing="false" onAction="#action6" prefHeight="85.0" prefWidth="140.0" styleClass="daily-top-button" stylesheets="@style.css" text="--" textAlignment="CENTER">
+                     <font>
+                        <Font name="Nunito Regular" size="24.0" />
+                     </font>
+                     <padding>
+                        <Insets top="5.0" />
+                     </padding>
+                  </Button>
+                  <Button fx:id="button7" mnemonicParsing="false" onAction="#action7" prefHeight="85.0" prefWidth="140.0" styleClass="daily-top-button" stylesheets="@style.css" text="--" textAlignment="CENTER">
                      <font>
                         <Font name="Nunito Regular" size="24.0" />
                      </font>
