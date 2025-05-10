@@ -57,6 +57,8 @@ public class DailyController {
     Button button7;
     @FXML
     ImageView view1;
+    @FXML
+    ImageView arrow;
     Queue queue=new Queue();
 
 
@@ -147,7 +149,7 @@ public class DailyController {
         apperantTempLabel.setText("Apperant Temperature: "+(head.getApparentMeanTemp())+" °C");
         precipitationLabel.setText("Precipitation Probability: "+(head.getPrecipProbabilty()));
         windSpeedLabel.setText("Wind Speed: "+(head.getWindSpeed()));
-        windDirectionLabel.setText("Wind Direction: "+(head.getWindDirection()));
+        arrow.setRotate(90+head.getWindDirection());
 
         switch (head.getWeatherCode()) {
             case 0:
@@ -234,7 +236,7 @@ public class DailyController {
         apperantTempLabel.setText("Apperant Temperature: "+(head.getApparentMeanTemp())+" °C");
         precipitationLabel.setText("Precipitation Probability: "+(head.getPrecipProbabilty()));
         windSpeedLabel.setText("Wind Speed: "+(head.getWindSpeed()));
-        windDirectionLabel.setText("Wind Direction: "+(head.getWindDirection()));
+        arrow.setRotate(90+head.getWindDirection());
         switch (head.getWeatherCode()) {
             case 0:
             case 1:
@@ -320,7 +322,7 @@ public class DailyController {
         apperantTempLabel.setText("Apperant Temperature: "+(head.getApparentMeanTemp())+" °C");
         precipitationLabel.setText("Precipitation Probability: "+(head.getPrecipProbabilty()));
         windSpeedLabel.setText("Wind Speed: "+(head.getWindSpeed()));
-        windDirectionLabel.setText("Wind Direction: "+(head.getWindDirection()));
+        arrow.setRotate(90+head.getWindDirection());
         switch (head.getWeatherCode()) {
             case 0:
             case 1:
@@ -405,7 +407,7 @@ public class DailyController {
         apperantTempLabel.setText("Apperant Temperature: "+(head.getApparentMeanTemp())+" °C");
         precipitationLabel.setText("Precipitation Probability: "+(head.getPrecipProbabilty()));
         windSpeedLabel.setText("Wind Speed: "+(head.getWindSpeed()));
-        windDirectionLabel.setText("Wind Direction: "+(head.getWindDirection()));
+        arrow.setRotate(90+head.getWindDirection());
         switch (head.getWeatherCode()) {
             case 0:
             case 1:
@@ -491,7 +493,7 @@ public class DailyController {
         apperantTempLabel.setText("Apperant Temperature: "+(head.getApparentMeanTemp())+" °C");
         precipitationLabel.setText("Precipitation Probability: "+(head.getPrecipProbabilty()));
         windSpeedLabel.setText("Wind Speed: "+(head.getWindSpeed()));
-        windDirectionLabel.setText("Wind Direction: "+(head.getWindDirection()));
+        arrow.setRotate(90+head.getWindDirection());
         switch (head.getWeatherCode()) {
             case 0:
             case 1:
@@ -576,7 +578,7 @@ public class DailyController {
         apperantTempLabel.setText("Apperant Temperature: "+(head.getApparentMeanTemp())+" °C");
         precipitationLabel.setText("Precipitation Probability: "+(head.getPrecipProbabilty()));
         windSpeedLabel.setText("Wind Speed: "+(head.getWindSpeed()));
-        windDirectionLabel.setText("Wind Direction: "+(head.getWindDirection()));
+        arrow.setRotate(90+head.getWindDirection());
         switch (head.getWeatherCode()) {
             case 0:
             case 1:
@@ -661,7 +663,7 @@ public class DailyController {
         apperantTempLabel.setText("Apperant Temperature: "+(head.getApparentMeanTemp())+" °C");
         precipitationLabel.setText("Precipitation Probability: "+(head.getPrecipProbabilty()));
         windSpeedLabel.setText("Wind Speed: "+(head.getWindSpeed()));
-        windDirectionLabel.setText("Wind Direction: "+(head.getWindDirection()));
+        arrow.setRotate(90+head.getWindDirection());
         switch (head.getWeatherCode()) {
             case 0:
             case 1:
