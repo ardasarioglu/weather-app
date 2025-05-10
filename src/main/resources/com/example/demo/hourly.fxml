@@ -47,7 +47,7 @@
       </HBox>
       <ScrollPane fitToWidth="true" prefHeight="698.0" prefWidth="450.0" styleClass="anchor-pane" stylesheets="@style.css">
          <content>
-            <VBox prefHeight="2000.0" prefWidth="435.0" styleClass="anchor-pane" stylesheets="@style.css">
+            <VBox prefHeight="2800.0" prefWidth="435.0" styleClass="anchor-pane" stylesheets="@style.css">
                <children>
                   <Label text="Date 1">
                      <font>
@@ -56,17 +56,35 @@
                   </Label>
                   <Accordion styleClass="titled-pane" stylesheets="@style.css">
                     <panes>
-                      <TitledPane animated="false" prefHeight="35.0" prefWidth="435.0" stylesheets="@style.css" text="0">
-                        <content>
-                          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
-                        </content>
+                        <TitledPane animated="false" stylesheets="@style.css" text="0">
+                           <content>
+                              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                 <children>
+                                    <ImageView fitHeight="43.0" fitWidth="51.0" layoutX="7.0" pickOnBounds="true" preserveRatio="true" />
+                                    <Label layoutX="95.0" layoutY="13.0" text="--  °C" />
+                                    <Label layoutX="19.0" layoutY="43.0" text="apparent temp" />
+                                    <Label layoutX="19.0" layoutY="60.0" text="wind speed" />
+                                    <Label layoutX="19.0" layoutY="77.0" text="precipitation probability" />
+                                    <Label layoutX="19.0" layoutY="94.0" text="wind direction" />
+                                 </children>
+                              </AnchorPane>
+                           </content>
                            <font>
                               <Font name="Nunito Regular" size="15.0" />
                            </font>
-                      </TitledPane>
+                        </TitledPane>
                         <TitledPane animated="false" stylesheets="@style.css" text="1">
                            <content>
-                              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+                              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                 <children>
+                                    <ImageView fitHeight="43.0" fitWidth="51.0" layoutX="7.0" pickOnBounds="true" preserveRatio="true" />
+                                    <Label layoutX="95.0" layoutY="13.0" text="--  °C" />
+                                    <Label layoutX="19.0" layoutY="43.0" text="apparent temp" />
+                                    <Label layoutX="19.0" layoutY="60.0" text="wind speed" />
+                                    <Label layoutX="19.0" layoutY="77.0" text="precipitation probability" />
+                                    <Label layoutX="19.0" layoutY="94.0" text="wind direction" />
+                                 </children>
+                              </AnchorPane>
                            </content>
                            <font>
                               <Font name="Nunito Regular" size="15.0" />
@@ -74,7 +92,16 @@
                         </TitledPane>
                         <TitledPane animated="false" stylesheets="@style.css" text="2">
                            <content>
-                              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+                              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                 <children>
+                                    <ImageView fitHeight="43.0" fitWidth="51.0" layoutX="7.0" pickOnBounds="true" preserveRatio="true" />
+                                    <Label layoutX="95.0" layoutY="13.0" text="--  °C" />
+                                    <Label layoutX="19.0" layoutY="43.0" text="apparent temp" />
+                                    <Label layoutX="19.0" layoutY="60.0" text="wind speed" />
+                                    <Label layoutX="19.0" layoutY="77.0" text="precipitation probability" />
+                                    <Label layoutX="19.0" layoutY="94.0" text="wind direction" />
+                                 </children>
+                              </AnchorPane>
                            </content>
                            <font>
                               <Font name="Nunito Regular" size="15.0" />
@@ -82,7 +109,16 @@
                         </TitledPane>
                         <TitledPane animated="false" stylesheets="@style.css" text="3">
                            <content>
-                              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+                              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                 <children>
+                                    <ImageView fitHeight="43.0" fitWidth="51.0" layoutX="7.0" pickOnBounds="true" preserveRatio="true" />
+                                    <Label layoutX="95.0" layoutY="13.0" text="--  °C" />
+                                    <Label layoutX="19.0" layoutY="43.0" text="apparent temp" />
+                                    <Label layoutX="19.0" layoutY="60.0" text="wind speed" />
+                                    <Label layoutX="19.0" layoutY="77.0" text="precipitation probability" />
+                                    <Label layoutX="19.0" layoutY="94.0" text="wind direction" />
+                                 </children>
+                              </AnchorPane>
                            </content>
                            <font>
                               <Font name="Nunito Regular" size="15.0" />
@@ -90,7 +126,16 @@
                         </TitledPane>
                         <TitledPane animated="false" stylesheets="@style.css" text="4">
                            <content>
-                              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+                              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                 <children>
+                                    <ImageView fitHeight="43.0" fitWidth="51.0" layoutX="7.0" pickOnBounds="true" preserveRatio="true" />
+                                    <Label layoutX="95.0" layoutY="13.0" text="--  °C" />
+                                    <Label layoutX="19.0" layoutY="43.0" text="apparent temp" />
+                                    <Label layoutX="19.0" layoutY="60.0" text="wind speed" />
+                                    <Label layoutX="19.0" layoutY="77.0" text="precipitation probability" />
+                                    <Label layoutX="19.0" layoutY="94.0" text="wind direction" />
+                                 </children>
+                              </AnchorPane>
                            </content>
                            <font>
                               <Font name="Nunito Regular" size="15.0" />
@@ -98,7 +143,16 @@
                         </TitledPane>
                         <TitledPane animated="false" stylesheets="@style.css" text="5">
                            <content>
-                              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+                              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                 <children>
+                                    <ImageView fitHeight="43.0" fitWidth="51.0" layoutX="7.0" pickOnBounds="true" preserveRatio="true" />
+                                    <Label layoutX="95.0" layoutY="13.0" text="--  °C" />
+                                    <Label layoutX="19.0" layoutY="43.0" text="apparent temp" />
+                                    <Label layoutX="19.0" layoutY="60.0" text="wind speed" />
+                                    <Label layoutX="19.0" layoutY="77.0" text="precipitation probability" />
+                                    <Label layoutX="19.0" layoutY="94.0" text="wind direction" />
+                                 </children>
+                              </AnchorPane>
                            </content>
                            <font>
                               <Font name="Nunito Regular" size="15.0" />
@@ -106,7 +160,16 @@
                         </TitledPane>
                         <TitledPane animated="false" stylesheets="@style.css" text="6">
                            <content>
-                              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+                              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                 <children>
+                                    <ImageView fitHeight="43.0" fitWidth="51.0" layoutX="7.0" pickOnBounds="true" preserveRatio="true" />
+                                    <Label layoutX="95.0" layoutY="13.0" text="--  °C" />
+                                    <Label layoutX="19.0" layoutY="43.0" text="apparent temp" />
+                                    <Label layoutX="19.0" layoutY="60.0" text="wind speed" />
+                                    <Label layoutX="19.0" layoutY="77.0" text="precipitation probability" />
+                                    <Label layoutX="19.0" layoutY="94.0" text="wind direction" />
+                                 </children>
+                              </AnchorPane>
                            </content>
                            <font>
                               <Font name="Nunito Regular" size="15.0" />
@@ -114,7 +177,16 @@
                         </TitledPane>
                         <TitledPane animated="false" stylesheets="@style.css" text="7">
                            <content>
-                              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+                              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                 <children>
+                                    <ImageView fitHeight="43.0" fitWidth="51.0" layoutX="7.0" pickOnBounds="true" preserveRatio="true" />
+                                    <Label layoutX="95.0" layoutY="13.0" text="--  °C" />
+                                    <Label layoutX="19.0" layoutY="43.0" text="apparent temp" />
+                                    <Label layoutX="19.0" layoutY="60.0" text="wind speed" />
+                                    <Label layoutX="19.0" layoutY="77.0" text="precipitation probability" />
+                                    <Label layoutX="19.0" layoutY="94.0" text="wind direction" />
+                                 </children>
+                              </AnchorPane>
                            </content>
                            <font>
                               <Font name="Nunito Regular" size="15.0" />
@@ -122,7 +194,16 @@
                         </TitledPane>
                         <TitledPane animated="false" stylesheets="@style.css" text="8">
                            <content>
-                              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+                              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                 <children>
+                                    <ImageView fitHeight="43.0" fitWidth="51.0" layoutX="7.0" pickOnBounds="true" preserveRatio="true" />
+                                    <Label layoutX="95.0" layoutY="13.0" text="--  °C" />
+                                    <Label layoutX="19.0" layoutY="43.0" text="apparent temp" />
+                                    <Label layoutX="19.0" layoutY="60.0" text="wind speed" />
+                                    <Label layoutX="19.0" layoutY="77.0" text="precipitation probability" />
+                                    <Label layoutX="19.0" layoutY="94.0" text="wind direction" />
+                                 </children>
+                              </AnchorPane>
                            </content>
                            <font>
                               <Font name="Nunito Regular" size="15.0" />
@@ -130,7 +211,16 @@
                         </TitledPane>
                         <TitledPane animated="false" stylesheets="@style.css" text="9">
                            <content>
-                              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+                              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                 <children>
+                                    <ImageView fitHeight="43.0" fitWidth="51.0" layoutX="7.0" pickOnBounds="true" preserveRatio="true" />
+                                    <Label layoutX="95.0" layoutY="13.0" text="--  °C" />
+                                    <Label layoutX="19.0" layoutY="43.0" text="apparent temp" />
+                                    <Label layoutX="19.0" layoutY="60.0" text="wind speed" />
+                                    <Label layoutX="19.0" layoutY="77.0" text="precipitation probability" />
+                                    <Label layoutX="19.0" layoutY="94.0" text="wind direction" />
+                                 </children>
+                              </AnchorPane>
                            </content>
                            <font>
                               <Font name="Nunito Regular" size="15.0" />
@@ -138,7 +228,16 @@
                         </TitledPane>
                         <TitledPane animated="false" stylesheets="@style.css" text="10">
                            <content>
-                              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+                              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                 <children>
+                                    <ImageView fitHeight="43.0" fitWidth="51.0" layoutX="7.0" pickOnBounds="true" preserveRatio="true" />
+                                    <Label layoutX="95.0" layoutY="13.0" text="--  °C" />
+                                    <Label layoutX="19.0" layoutY="43.0" text="apparent temp" />
+                                    <Label layoutX="19.0" layoutY="60.0" text="wind speed" />
+                                    <Label layoutX="19.0" layoutY="77.0" text="precipitation probability" />
+                                    <Label layoutX="19.0" layoutY="94.0" text="wind direction" />
+                                 </children>
+                              </AnchorPane>
                            </content>
                            <font>
                               <Font name="Nunito Regular" size="15.0" />
@@ -146,7 +245,16 @@
                         </TitledPane>
                         <TitledPane animated="false" stylesheets="@style.css" text="11">
                            <content>
-                              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+                              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                 <children>
+                                    <ImageView fitHeight="43.0" fitWidth="51.0" layoutX="7.0" pickOnBounds="true" preserveRatio="true" />
+                                    <Label layoutX="95.0" layoutY="13.0" text="--  °C" />
+                                    <Label layoutX="19.0" layoutY="43.0" text="apparent temp" />
+                                    <Label layoutX="19.0" layoutY="60.0" text="wind speed" />
+                                    <Label layoutX="19.0" layoutY="77.0" text="precipitation probability" />
+                                    <Label layoutX="19.0" layoutY="94.0" text="wind direction" />
+                                 </children>
+                              </AnchorPane>
                            </content>
                            <font>
                               <Font name="Nunito Regular" size="15.0" />
@@ -154,7 +262,16 @@
                         </TitledPane>
                         <TitledPane animated="false" stylesheets="@style.css" text="12">
                            <content>
-                              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+                              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                 <children>
+                                    <ImageView fitHeight="43.0" fitWidth="51.0" layoutX="7.0" pickOnBounds="true" preserveRatio="true" />
+                                    <Label layoutX="95.0" layoutY="13.0" text="--  °C" />
+                                    <Label layoutX="19.0" layoutY="43.0" text="apparent temp" />
+                                    <Label layoutX="19.0" layoutY="60.0" text="wind speed" />
+                                    <Label layoutX="19.0" layoutY="77.0" text="precipitation probability" />
+                                    <Label layoutX="19.0" layoutY="94.0" text="wind direction" />
+                                 </children>
+                              </AnchorPane>
                            </content>
                            <font>
                               <Font name="Nunito Regular" size="15.0" />
@@ -162,7 +279,16 @@
                         </TitledPane>
                         <TitledPane animated="false" stylesheets="@style.css" text="13">
                            <content>
-                              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+                              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                 <children>
+                                    <ImageView fitHeight="43.0" fitWidth="51.0" layoutX="7.0" pickOnBounds="true" preserveRatio="true" />
+                                    <Label layoutX="95.0" layoutY="13.0" text="--  °C" />
+                                    <Label layoutX="19.0" layoutY="43.0" text="apparent temp" />
+                                    <Label layoutX="19.0" layoutY="60.0" text="wind speed" />
+                                    <Label layoutX="19.0" layoutY="77.0" text="precipitation probability" />
+                                    <Label layoutX="19.0" layoutY="94.0" text="wind direction" />
+                                 </children>
+                              </AnchorPane>
                            </content>
                            <font>
                               <Font name="Nunito Regular" size="15.0" />
@@ -170,7 +296,16 @@
                         </TitledPane>
                         <TitledPane animated="false" stylesheets="@style.css" text="14">
                            <content>
-                              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+                              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                 <children>
+                                    <ImageView fitHeight="43.0" fitWidth="51.0" layoutX="7.0" pickOnBounds="true" preserveRatio="true" />
+                                    <Label layoutX="95.0" layoutY="13.0" text="--  °C" />
+                                    <Label layoutX="19.0" layoutY="43.0" text="apparent temp" />
+                                    <Label layoutX="19.0" layoutY="60.0" text="wind speed" />
+                                    <Label layoutX="19.0" layoutY="77.0" text="precipitation probability" />
+                                    <Label layoutX="19.0" layoutY="94.0" text="wind direction" />
+                                 </children>
+                              </AnchorPane>
                            </content>
                            <font>
                               <Font name="Nunito Regular" size="15.0" />
@@ -178,7 +313,16 @@
                         </TitledPane>
                         <TitledPane animated="false" stylesheets="@style.css" text="15">
                            <content>
-                              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+                              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                 <children>
+                                    <ImageView fitHeight="43.0" fitWidth="51.0" layoutX="7.0" pickOnBounds="true" preserveRatio="true" />
+                                    <Label layoutX="95.0" layoutY="13.0" text="--  °C" />
+                                    <Label layoutX="19.0" layoutY="43.0" text="apparent temp" />
+                                    <Label layoutX="19.0" layoutY="60.0" text="wind speed" />
+                                    <Label layoutX="19.0" layoutY="77.0" text="precipitation probability" />
+                                    <Label layoutX="19.0" layoutY="94.0" text="wind direction" />
+                                 </children>
+                              </AnchorPane>
                            </content>
                            <font>
                               <Font name="Nunito Regular" size="15.0" />
@@ -186,7 +330,16 @@
                         </TitledPane>
                         <TitledPane animated="false" stylesheets="@style.css" text="16">
                            <content>
-                              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+                              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                 <children>
+                                    <ImageView fitHeight="43.0" fitWidth="51.0" layoutX="7.0" pickOnBounds="true" preserveRatio="true" />
+                                    <Label layoutX="95.0" layoutY="13.0" text="--  °C" />
+                                    <Label layoutX="19.0" layoutY="43.0" text="apparent temp" />
+                                    <Label layoutX="19.0" layoutY="60.0" text="wind speed" />
+                                    <Label layoutX="19.0" layoutY="77.0" text="precipitation probability" />
+                                    <Label layoutX="19.0" layoutY="94.0" text="wind direction" />
+                                 </children>
+                              </AnchorPane>
                            </content>
                            <font>
                               <Font name="Nunito Regular" size="15.0" />
@@ -194,7 +347,16 @@
                         </TitledPane>
                         <TitledPane animated="false" stylesheets="@style.css" text="17">
                            <content>
-                              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+                              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                 <children>
+                                    <ImageView fitHeight="43.0" fitWidth="51.0" layoutX="7.0" pickOnBounds="true" preserveRatio="true" />
+                                    <Label layoutX="95.0" layoutY="13.0" text="--  °C" />
+                                    <Label layoutX="19.0" layoutY="43.0" text="apparent temp" />
+                                    <Label layoutX="19.0" layoutY="60.0" text="wind speed" />
+                                    <Label layoutX="19.0" layoutY="77.0" text="precipitation probability" />
+                                    <Label layoutX="19.0" layoutY="94.0" text="wind direction" />
+                                 </children>
+                              </AnchorPane>
                            </content>
                            <font>
                               <Font name="Nunito Regular" size="15.0" />
@@ -202,7 +364,16 @@
                         </TitledPane>
                         <TitledPane animated="false" stylesheets="@style.css" text="18">
                            <content>
-                              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+                              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                 <children>
+                                    <ImageView fitHeight="43.0" fitWidth="51.0" layoutX="7.0" pickOnBounds="true" preserveRatio="true" />
+                                    <Label layoutX="95.0" layoutY="13.0" text="--  °C" />
+                                    <Label layoutX="19.0" layoutY="43.0" text="apparent temp" />
+                                    <Label layoutX="19.0" layoutY="60.0" text="wind speed" />
+                                    <Label layoutX="19.0" layoutY="77.0" text="precipitation probability" />
+                                    <Label layoutX="19.0" layoutY="94.0" text="wind direction" />
+                                 </children>
+                              </AnchorPane>
                            </content>
                            <font>
                               <Font name="Nunito Regular" size="15.0" />
@@ -210,7 +381,16 @@
                         </TitledPane>
                         <TitledPane animated="false" stylesheets="@style.css" text="19">
                            <content>
-                              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+                              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                 <children>
+                                    <ImageView fitHeight="43.0" fitWidth="51.0" layoutX="7.0" pickOnBounds="true" preserveRatio="true" />
+                                    <Label layoutX="95.0" layoutY="13.0" text="--  °C" />
+                                    <Label layoutX="19.0" layoutY="43.0" text="apparent temp" />
+                                    <Label layoutX="19.0" layoutY="60.0" text="wind speed" />
+                                    <Label layoutX="19.0" layoutY="77.0" text="precipitation probability" />
+                                    <Label layoutX="19.0" layoutY="94.0" text="wind direction" />
+                                 </children>
+                              </AnchorPane>
                            </content>
                            <font>
                               <Font name="Nunito Regular" size="15.0" />
@@ -218,7 +398,16 @@
                         </TitledPane>
                         <TitledPane animated="false" stylesheets="@style.css" text="20">
                            <content>
-                              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+                              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                 <children>
+                                    <ImageView fitHeight="43.0" fitWidth="51.0" layoutX="7.0" pickOnBounds="true" preserveRatio="true" />
+                                    <Label layoutX="95.0" layoutY="13.0" text="--  °C" />
+                                    <Label layoutX="19.0" layoutY="43.0" text="apparent temp" />
+                                    <Label layoutX="19.0" layoutY="60.0" text="wind speed" />
+                                    <Label layoutX="19.0" layoutY="77.0" text="precipitation probability" />
+                                    <Label layoutX="19.0" layoutY="94.0" text="wind direction" />
+                                 </children>
+                              </AnchorPane>
                            </content>
                            <font>
                               <Font name="Nunito Regular" size="15.0" />
@@ -226,7 +415,16 @@
                         </TitledPane>
                         <TitledPane animated="false" stylesheets="@style.css" text="21">
                            <content>
-                              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+                              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                 <children>
+                                    <ImageView fitHeight="43.0" fitWidth="51.0" layoutX="7.0" pickOnBounds="true" preserveRatio="true" />
+                                    <Label layoutX="95.0" layoutY="13.0" text="--  °C" />
+                                    <Label layoutX="19.0" layoutY="43.0" text="apparent temp" />
+                                    <Label layoutX="19.0" layoutY="60.0" text="wind speed" />
+                                    <Label layoutX="19.0" layoutY="77.0" text="precipitation probability" />
+                                    <Label layoutX="19.0" layoutY="94.0" text="wind direction" />
+                                 </children>
+                              </AnchorPane>
                            </content>
                            <font>
                               <Font name="Nunito Regular" size="15.0" />
@@ -234,7 +432,16 @@
                         </TitledPane>
                         <TitledPane animated="false" stylesheets="@style.css" text="22">
                            <content>
-                              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+                              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                 <children>
+                                    <ImageView fitHeight="43.0" fitWidth="51.0" layoutX="7.0" pickOnBounds="true" preserveRatio="true" />
+                                    <Label layoutX="95.0" layoutY="13.0" text="--  °C" />
+                                    <Label layoutX="19.0" layoutY="43.0" text="apparent temp" />
+                                    <Label layoutX="19.0" layoutY="60.0" text="wind speed" />
+                                    <Label layoutX="19.0" layoutY="77.0" text="precipitation probability" />
+                                    <Label layoutX="19.0" layoutY="94.0" text="wind direction" />
+                                 </children>
+                              </AnchorPane>
                            </content>
                            <font>
                               <Font name="Nunito Regular" size="15.0" />
@@ -242,7 +449,16 @@
                         </TitledPane>
                         <TitledPane animated="false" stylesheets="@style.css" text="23">
                            <content>
-                              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+                              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                 <children>
+                                    <ImageView fitHeight="43.0" fitWidth="51.0" layoutX="7.0" pickOnBounds="true" preserveRatio="true" />
+                                    <Label layoutX="95.0" layoutY="13.0" text="--  °C" />
+                                    <Label layoutX="19.0" layoutY="43.0" text="apparent temp" />
+                                    <Label layoutX="19.0" layoutY="60.0" text="wind speed" />
+                                    <Label layoutX="19.0" layoutY="77.0" text="precipitation probability" />
+                                    <Label layoutX="19.0" layoutY="94.0" text="wind direction" />
+                                 </children>
+                              </AnchorPane>
                            </content>
                            <font>
                               <Font name="Nunito Regular" size="15.0" />

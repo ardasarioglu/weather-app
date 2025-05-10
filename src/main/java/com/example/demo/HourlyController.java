@@ -21,7 +21,7 @@ public class HourlyController {
 
     public void setWeatherJSON(JSONObject weatherJSON){
         this.weatherJSON=weatherJSON;
-
+        updateScreen();
     }
 
 
@@ -48,7 +48,7 @@ public class HourlyController {
         stage.show();
     }
 
-    public void initialize(){
+    public void updateScreen(){
         if(weatherJSON!=null){
             JSONObject jsonObject=weatherJSON;
             JSONObject hourly=jsonObject.getJSONObject("hourly");
@@ -63,6 +63,9 @@ public class HourlyController {
             for(int i=0;i<72;i++){
                 queue.addNode(new WeatherNode(times.getString(i), weatherCodes.getInt(i), windDirections.getInt(i), temperatures.getDouble(i), apparentTemperatures.getDouble(i), windSpeeds.getDouble(i), preciProbabs.getDouble(i)));
             }
+            WeatherNode head=queue.getHead();
+
+
         }
 
 
