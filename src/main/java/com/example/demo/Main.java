@@ -1,5 +1,5 @@
 package com.example.demo;
-//deneme
+//deneme ddşlkdlg
 
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
