@@ -39,6 +39,8 @@ public class HomeController {
     Label windSpeedLabel;
     @FXML
     Label windDirectionLabel;
+    @FXML
+    ImageView arrow;
 
     private JSONObject weatherJSON;
 
@@ -86,7 +88,7 @@ public class HomeController {
             apperantTempLabel.setText("Apperant Temperature: "+currentWeather.getApparentMeanTemp()+"°C");
             precipitationLabel.setText("Precipitation Probability: %"+currentWeather.getPrecipProbabilty());
             windSpeedLabel.setText("Wind Speed: "+currentWeather.getWindSpeed()+" km/h");
-            windDirectionLabel.setText("Wind Direction: "+currentWeather.getWindDirection());
+            arrow.setRotate(90+currentWeather.getWindDirection());
             switch (currentWeather.getWeatherCode()) {
                 case 0:
                 case 1:
@@ -177,7 +179,7 @@ public class HomeController {
         apperantTempLabel.setText("Apperant Temperature: "+currentWeather.getApparentMeanTemp()+"°C");
         precipitationLabel.setText("Precipitation Probability: %"+currentWeather.getPrecipProbabilty());
         windSpeedLabel.setText("Wind Speed: "+currentWeather.getWindSpeed()+" km/h");
-        windDirectionLabel.setText("Wind Direction: "+currentWeather.getWindDirection());
+        arrow.setRotate(90+currentWeather.getWindDirection());
         switch (currentWeather.getWeatherCode()) {
             case 0:
             case 1:
