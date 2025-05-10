@@ -36,7 +36,11 @@ public class HourlyController {
     }
 
     public void goDaily(ActionEvent event) throws IOException{
-        root=FXMLLoader.load(getClass().getResource("daily.fxml"));
+        FXMLLoader loader=new FXMLLoader(getClass().getResource("daily.fxml"));
+        Parent root=loader.load();
+        DailyController dailyController=loader.getController();
+        dailyController.setWeatherJSON(this.weatherJSON);
+
         stage=(Stage) ((Node)event.getSource()).getScene().getWindow();
         scene=new Scene(root);
         stage.setScene(scene);

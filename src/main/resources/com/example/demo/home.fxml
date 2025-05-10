@@ -49,7 +49,7 @@
                   <Font name="Nunito Regular" size="21.0" />
                </font>
             </TextField>
-            <Label fx:id="tempLabel" layoutX="156.0" layoutY="131.0" prefHeight="140.0" prefWidth="297.0" text="-- °C">
+            <Label fx:id="tempLabel" layoutX="190.0" layoutY="131.0" prefHeight="140.0" prefWidth="297.0" text="-- °C">
                <font>
                   <Font name="Nunito Regular" size="88.0" />
                </font>
