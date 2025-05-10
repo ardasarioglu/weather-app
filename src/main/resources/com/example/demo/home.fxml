@@ -9,9 +9,9 @@
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="813.0" prefWidth="450.0" styleClass="anchor-pane" stylesheets="@style.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo.HomeController">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="450.0" styleClass="anchor-pane" stylesheets="@style.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo.HomeController">
    <children>
-      <HBox layoutY="712.0" prefHeight="100.0" prefWidth="450.0">
+      <HBox layoutY="700.0" prefHeight="100.0" prefWidth="450.0">
          <children>
             <Button mnemonicParsing="false" prefHeight="100.0" prefWidth="150.0" styleClass="active-button" stylesheets="@style.css">
                <graphic>
@@ -42,14 +42,14 @@
             </Button>
          </children>
       </HBox>
-      <AnchorPane layoutX="-7.0" layoutY="6.0" prefHeight="542.0" prefWidth="454.0" styleClass="anchor-pane" stylesheets="@style.css">
+      <AnchorPane layoutX="-7.0" layoutY="6.0" prefHeight="542.0" prefWidth="457.0" styleClass="anchor-pane" stylesheets="@style.css">
          <children>
             <TextField fx:id="searchField" layoutX="14.0" layoutY="14.0" prefHeight="44.0" prefWidth="297.0" promptText="Search City:" styleClass="search-field" stylesheets="@style.css">
                <font>
                   <Font name="Nunito Regular" size="21.0" />
                </font>
             </TextField>
-            <Label fx:id="tempLabel" layoutX="190.0" layoutY="131.0" prefHeight="140.0" prefWidth="297.0" text="-- °C">
+            <Label fx:id="tempLabel" layoutX="190.0" layoutY="131.0" prefHeight="140.0" prefWidth="267.0" text="-- °C">
                <font>
                   <Font name="Nunito Regular" size="88.0" />
                </font>

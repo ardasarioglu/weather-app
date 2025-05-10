@@ -48,7 +48,11 @@ public class HomeController {
     }
 
     public void goDaily(ActionEvent event) throws IOException {
-        root=FXMLLoader.load(getClass().getResource("daily.fxml"));
+        FXMLLoader loader=new FXMLLoader(getClass().getResource("daily.fxml"));
+        Parent root=loader.load();
+        DailyController dailyController=loader.getController();
+        dailyController.setWeatherJSON(this.weatherJSON);
+
         stage=(Stage) ((Node)event.getSource()).getScene().getWindow();
         scene=new Scene(root);
         stage.setScene(scene);
@@ -85,89 +89,70 @@ public class HomeController {
             windDirectionLabel.setText("Wind Direction: "+currentWeather.getWindDirection());
             switch (currentWeather.getWeatherCode()) {
                 case 0:
-                    weatherLabel.setText("Clear Sky");
-                    break;
                 case 1:
-                    weatherLabel.setText("Mainly Clear");
+                    weatherLabel.setText("Clear");
+                    view1.setImage(new Image(getClass().getResourceAsStream("/com/example/demo/icons/clear.png")));
                     break;
+
                 case 2:
-                    weatherLabel.setText("Partly Cloudy");
-                    break;
                 case 3:
-                    weatherLabel.setText("Overcast");
+                    weatherLabel.setText("Cloudy");
+                    view1.setImage(new Image(getClass().getResourceAsStream("/com/example/demo/icons/cloudy.png")));
                     break;
+
                 case 45:
-                    weatherLabel.setText("Fog");
-                    break;
                 case 48:
-                    weatherLabel.setText("Depositing Rime Fog");
+                    weatherLabel.setText("Fog");
+                    view1.setImage(new Image(getClass().getResourceAsStream("/com/example/demo/icons/fog.png")));
                     break;
+
                 case 51:
-                    weatherLabel.setText("Light Drizzle");
-                    break;
                 case 53:
-                    weatherLabel.setText("Drizzle");
-                    break;
                 case 55:
-                    weatherLabel.setText("Heavy Drizzle");
-                    break;
                 case 56:
-                    weatherLabel.setText("Light Freezing Drizzle");
-                    break;
                 case 57:
-                    weatherLabel.setText("Heavy Freezing Drizzle");
+                    weatherLabel.setText("Drizzle");
+                    view1.setImage(new Image(getClass().getResourceAsStream("/com/example/demo/icons/drizzle.png")));
+
                     break;
+
                 case 61:
-                    weatherLabel.setText("Light Rain");
-                    break;
                 case 63:
-                    weatherLabel.setText("Moderate Rain");
-                    break;
                 case 65:
-                    weatherLabel.setText("Heavy Rain");
-                    break;
                 case 66:
-                    weatherLabel.setText("Light Freezing Rain");
-                    break;
                 case 67:
-                    weatherLabel.setText("Heavy Freezing Rain");
+                    weatherLabel.setText("Rain");
+                    view1.setImage(new Image(getClass().getResourceAsStream("/com/example/demo/icons/rain.png")));
                     break;
+
                 case 71:
-                    weatherLabel.setText("Light Snow");
-                    break;
                 case 73:
-                    weatherLabel.setText("Moderate Snow");
-                    break;
                 case 75:
-                    weatherLabel.setText("Heavy Snow");
-                    break;
                 case 77:
-                    weatherLabel.setText("Snow Grains");
+                    weatherLabel.setText("Snow");
+                    view1.setImage(new Image(getClass().getResourceAsStream("/com/example/demo/icons/snow.png")));
                     break;
+
                 case 80:
-                    weatherLabel.setText("Light Rain Showers");
-                    break;
                 case 81:
-                    weatherLabel.setText("Moderate Rain Showers");
-                    break;
                 case 82:
-                    weatherLabel.setText("Heavy Rain Showers");
+                    weatherLabel.setText("Rain Showers");
+                    view1.setImage(new Image(getClass().getResourceAsStream("/com/example/demo/icons/rainshower.png")));
                     break;
+
                 case 85:
-                    weatherLabel.setText("Light Snow Showers");
-                    break;
                 case 86:
-                    weatherLabel.setText("Heavy Snow Showers");
+                    weatherLabel.setText("Snow Showers");
+                    view1.setImage(new Image(getClass().getResourceAsStream("/com/example/demo/icons/snowshower.png")));
                     break;
+
                 case 95:
-                    weatherLabel.setText("Thunderstorm");
-                    break;
                 case 96:
-                    weatherLabel.setText("Thunderstorm with Light Hail");
-                    break;
                 case 99:
-                    weatherLabel.setText("Thunderstorm with Heavy Hail");
+                    weatherLabel.setText("Thunderstorm");
+                    view1.setImage(new Image(getClass().getResourceAsStream("/com/example/demo/icons/thunderstorm.png")));
                     break;
+
                 default:
                     weatherLabel.setText("Unknown Weather");
                     break;
@@ -193,91 +178,72 @@ public class HomeController {
         precipitationLabel.setText("Precipitation Probability: %"+currentWeather.getPrecipProbabilty());
         windSpeedLabel.setText("Wind Speed: "+currentWeather.getWindSpeed()+" km/h");
         windDirectionLabel.setText("Wind Direction: "+currentWeather.getWindDirection());
-        switch (currentWeather.getWeatherCode()){
+        switch (currentWeather.getWeatherCode()) {
             case 0:
-                weatherLabel.setText("Clear Sky");
-                break;
             case 1:
-                weatherLabel.setText("Mainly Clear");
+                weatherLabel.setText("Clear");
+                view1.setImage(new Image(getClass().getResourceAsStream("/com/example/demo/icons/clear.png")));
                 break;
+
             case 2:
-                weatherLabel.setText("Partly Cloudy");
-                break;
             case 3:
-                weatherLabel.setText("Overcast");
+                weatherLabel.setText("Cloudy");
+                view1.setImage(new Image(getClass().getResourceAsStream("/com/example/demo/icons/cloudy.png")));
                 break;
+
             case 45:
-                weatherLabel.setText("Fog");
-                break;
             case 48:
-                weatherLabel.setText("Depositing Rime Fog");
+                weatherLabel.setText("Fog");
+                view1.setImage(new Image(getClass().getResourceAsStream("/com/example/demo/icons/fog.png")));
                 break;
+
             case 51:
-                weatherLabel.setText("Light Drizzle");
-                break;
             case 53:
-                weatherLabel.setText("Drizzle");
-                break;
             case 55:
-                weatherLabel.setText("Heavy Drizzle");
-                break;
             case 56:
-                weatherLabel.setText("Light Freezing Drizzle");
-                break;
             case 57:
-                weatherLabel.setText("Heavy Freezing Drizzle");
+                weatherLabel.setText("Drizzle");
+                view1.setImage(new Image(getClass().getResourceAsStream("/com/example/demo/icons/drizzle.png")));
+
                 break;
+
             case 61:
-                weatherLabel.setText("Light Rain");
-                break;
             case 63:
-                weatherLabel.setText("Moderate Rain");
-                break;
             case 65:
-                weatherLabel.setText("Heavy Rain");
-                break;
             case 66:
-                weatherLabel.setText("Light Freezing Rain");
-                break;
             case 67:
-                weatherLabel.setText("Heavy Freezing Rain");
+                weatherLabel.setText("Rain");
+                view1.setImage(new Image(getClass().getResourceAsStream("/com/example/demo/icons/rain.png")));
                 break;
+
             case 71:
-                weatherLabel.setText("Light Snow");
-                break;
             case 73:
-                weatherLabel.setText("Moderate Snow");
-                break;
             case 75:
-                weatherLabel.setText("Heavy Snow");
-                break;
             case 77:
-                weatherLabel.setText("Snow Grains");
+                weatherLabel.setText("Snow");
+                view1.setImage(new Image(getClass().getResourceAsStream("/com/example/demo/icons/snow.png")));
                 break;
+
             case 80:
-                weatherLabel.setText("Light Rain Showers");
-                break;
             case 81:
-                weatherLabel.setText("Moderate Rain Showers");
-                break;
             case 82:
-                weatherLabel.setText("Heavy Rain Showers");
+                weatherLabel.setText("Rain Showers");
+                view1.setImage(new Image(getClass().getResourceAsStream("/com/example/demo/icons/rainshower.png")));
                 break;
+
             case 85:
-                weatherLabel.setText("Light Snow Showers");
-                break;
             case 86:
-                weatherLabel.setText("Heavy Snow Showers");
+                weatherLabel.setText("Snow Showers");
+                view1.setImage(new Image(getClass().getResourceAsStream("/com/example/demo/icons/snowshower.png")));
                 break;
+
             case 95:
-                weatherLabel.setText("Thunderstorm");
-                break;
             case 96:
-                weatherLabel.setText("Thunderstorm with Light Hail");
-                break;
             case 99:
-                weatherLabel.setText("Thunderstorm with Heavy Hail");
+                weatherLabel.setText("Thunderstorm");
+                view1.setImage(new Image(getClass().getResourceAsStream("/com/example/demo/icons/thunderstorm.png")));
                 break;
+
             default:
                 weatherLabel.setText("Unknown Weather");
                 break;

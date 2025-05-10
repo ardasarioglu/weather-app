@@ -21,6 +21,7 @@ public class HourlyController {
 
     public void setWeatherJSON(JSONObject weatherJSON){
         this.weatherJSON=weatherJSON;
+
     }
 
 
