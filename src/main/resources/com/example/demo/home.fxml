@@ -9,9 +9,9 @@
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="900.0" prefWidth="450.0" styleClass="anchor-pane" stylesheets="@style.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo.HomeController">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="813.0" prefWidth="450.0" styleClass="anchor-pane" stylesheets="@style.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo.HomeController">
    <children>
-      <HBox layoutY="800.0" prefHeight="100.0" prefWidth="450.0">
+      <HBox layoutY="712.0" prefHeight="100.0" prefWidth="450.0">
          <children>
             <Button mnemonicParsing="false" prefHeight="100.0" prefWidth="150.0" styleClass="active-button" stylesheets="@style.css">
                <graphic>
@@ -42,7 +42,7 @@
             </Button>
          </children>
       </HBox>
-      <AnchorPane prefHeight="800.0" prefWidth="450.0" styleClass="anchor-pane" stylesheets="@style.css">
+      <AnchorPane layoutX="-7.0" layoutY="6.0" prefHeight="542.0" prefWidth="454.0" styleClass="anchor-pane" stylesheets="@style.css">
          <children>
             <TextField fx:id="searchField" layoutX="14.0" layoutY="14.0" prefHeight="44.0" prefWidth="297.0" promptText="Search City:" styleClass="search-field" stylesheets="@style.css">
                <font>
@@ -59,7 +59,9 @@
                   <Font size="38.0" />
                </font>
             </Label>
+
             <ImageView fx:id="view1" fitHeight="150.0" fitWidth="176.0" layoutX="14.0" layoutY="126.0" pickOnBounds="true" preserveRatio="true" />
+
             <Label fx:id="apperantTempLabel" layoutX="14.0" layoutY="326.0" prefHeight="24.0" prefWidth="285.0" text="Apperant Temperature: --">
                <font>
                   <Font name="Nunito Regular" size="16.0" />

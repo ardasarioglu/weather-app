@@ -6,9 +6,9 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.HBox?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="900.0" prefWidth="450.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo.DailyController">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="450.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo.DailyController">
    <children>
-      <HBox layoutY="800.0" prefHeight="100.0" prefWidth="450.0">
+      <HBox layoutY="694.0" prefHeight="100.0" prefWidth="450.0">
          <children>
             <Button mnemonicParsing="false" onAction="#goHome" prefHeight="100.0" prefWidth="150.0" styleClass="passive-button" stylesheets="@style.css">
                <graphic>
