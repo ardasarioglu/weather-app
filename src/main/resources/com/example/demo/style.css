@@ -37,6 +37,8 @@
 }
 .anchor-pane{
     -fx-background-color: #ffffff;
+    -fx-background-image: url("file:src/main/resources/background.jpg");
+
 }
 
 .daily-top-button{

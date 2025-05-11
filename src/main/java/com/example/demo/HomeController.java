@@ -42,6 +42,7 @@ public class HomeController {
     @FXML
     ImageView arrow;
 
+
     private JSONObject weatherJSON;
 
     public void setWeatherJSON(JSONObject weatherJSON){
