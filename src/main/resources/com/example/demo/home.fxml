@@ -7,6 +7,7 @@
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.HBox?>
+<?import javafx.scene.shape.Line?>
 <?import javafx.scene.text.Font?>
 
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="450.0" styleClass="anchor-pane" stylesheets="@style.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo.HomeController">
@@ -42,7 +43,7 @@
             </Button>
          </children>
       </HBox>
-      <AnchorPane layoutX="-7.0" layoutY="6.0" prefHeight="542.0" prefWidth="457.0" styleClass="anchor-pane" stylesheets="@style.css">
+      <AnchorPane layoutX="-7.0" layoutY="6.0" prefHeight="680.0" prefWidth="457.0" styleClass="anchor-pane" stylesheets="@style.css">
          <children>
             <TextField fx:id="searchField" layoutX="14.0" layoutY="14.0" prefHeight="44.0" prefWidth="297.0" promptText="Search City:" styleClass="search-field" stylesheets="@style.css">
                <font>
@@ -62,24 +63,24 @@
 
             <ImageView fx:id="view1" fitHeight="150.0" fitWidth="176.0" layoutX="14.0" layoutY="126.0" pickOnBounds="true" preserveRatio="true" />
 
-            <Label fx:id="apperantTempLabel" layoutX="14.0" layoutY="326.0" prefHeight="24.0" prefWidth="285.0" text="Apperant Temperature: --">
+            <Label layoutX="14.0" layoutY="326.0" prefHeight="29.0" prefWidth="206.0" text="Apperant Temperature">
                <font>
-                  <Font name="Nunito Regular" size="16.0" />
+                  <Font name="Nunito Regular" size="20.0" />
                </font>
             </Label>
-            <Label fx:id="precipitationLabel" layoutX="14.0" layoutY="350.0" prefHeight="24.0" prefWidth="267.0" text="Precipitation Probabilty: --">
+            <Label layoutX="14.0" layoutY="395.0" prefHeight="29.0" prefWidth="217.0" text="Precipitation Probabilty">
                <font>
-                  <Font name="Nunito Regular" size="16.0" />
+                  <Font name="Nunito Regular" size="20.0" />
                </font>
             </Label>
-            <Label fx:id="windSpeedLabel" layoutX="14.0" layoutY="374.0" prefHeight="24.0" prefWidth="217.0" text="Wind Speed: --">
+            <Label layoutX="250.0" layoutY="326.0" prefHeight="29.0" prefWidth="115.0" text="Wind Speed">
                <font>
-                  <Font name="Nunito Regular" size="16.0" />
+                  <Font name="Nunito Regular" size="20.0" />
                </font>
             </Label>
-            <Label fx:id="windDirectionLabel" layoutX="14.0" layoutY="398.0" prefHeight="24.0" prefWidth="198.0" text="Wind Direction:">
+            <Label fx:id="windDirectionLabel" layoutX="250.0" layoutY="395.0" prefHeight="29.0" prefWidth="141.0" text="Wind Direction">
                <font>
-                  <Font name="Nunito Regular" size="16.0" />
+                  <Font name="Nunito Regular" size="20.0" />
                </font>
             </Label>
             <Button layoutX="315.0" layoutY="14.0" mnemonicParsing="false" onAction="#search" prefHeight="44.0" prefWidth="109.0" styleClass="search-button" stylesheets="@style.css" text="Search">
@@ -87,11 +88,27 @@
                   <Font name="Nunito Regular" size="21.0" />
                </font>
             </Button>
-            <ImageView fx:id="arrow" fitHeight="21.0" fitWidth="19.0" layoutX="131.0" layoutY="403.0" pickOnBounds="true" preserveRatio="true" rotate="90.0">
+            <ImageView fx:id="arrow" fitHeight="21.0" fitWidth="19.0" layoutX="250.0" layoutY="429.0" pickOnBounds="true" preserveRatio="true" rotate="90.0">
                <image>
                   <Image url="@images/arrow.png" />
                </image>
             </ImageView>
+            <Line endX="325.0" layoutX="117.0" layoutY="395.0" startX="-100.0" />
+            <Label fx:id="apperantTempLabel" layoutX="14.0" layoutY="355.0" prefHeight="29.0" prefWidth="150.0" styleClass="label-bold" stylesheets="@style.css" text="--">
+               <font>
+                  <Font name="Nunito Regular" size="20.0" />
+               </font>
+            </Label>
+            <Label fx:id="windSpeedLabel" layoutX="250.0" layoutY="355.0" prefHeight="29.0" prefWidth="150.0" styleClass="label-bold" stylesheets="@style.css" text="--">
+               <font>
+                  <Font name="Nunito Regular" size="20.0" />
+               </font>
+            </Label>
+            <Label fx:id="precipitationLabel" layoutX="14.0" layoutY="424.0" prefHeight="29.0" prefWidth="150.0" styleClass="label-bold" stylesheets="@style.css" text="--">
+               <font>
+                  <Font name="Nunito Regular" size="20.0" />
+               </font>
+            </Label>
          </children>
       </AnchorPane>
    </children>

@@ -142,13 +142,13 @@ public class DailyController {
     public void action1(){
         WeatherNode head=this.queue.getHead();
         tempLabel.setText((head.getMeanTemp())+" °C");
-        maxTempLabel.setText("Max Temperature: "+(head.getMaxTemp())+" °C");
-        minTempLabel.setText("Min Temperature: "+(head.getMinTemp())+" °C");
-        maxApperantTempLabel.setText("Max Apperant Temperature: "+(head.getApparentMaxTemp())+" °C");
-        minApperantTempLabel.setText("Min Apperant Temperature: "+(head.getApparentMinTemp())+" °C");
-        apperantTempLabel.setText("Apperant Temperature: "+(head.getApparentMeanTemp())+" °C");
-        precipitationLabel.setText("Precipitation Probability: "+(head.getPrecipProbabilty()));
-        windSpeedLabel.setText("Wind Speed: "+(head.getWindSpeed()));
+        maxTempLabel.setText((head.getMaxTemp())+" °C");
+        minTempLabel.setText((head.getMinTemp())+" °C");
+        maxApperantTempLabel.setText((head.getApparentMaxTemp())+" °C");
+        minApperantTempLabel.setText((head.getApparentMinTemp())+" °C");
+        apperantTempLabel.setText((head.getApparentMeanTemp())+" °C");
+        precipitationLabel.setText((head.getPrecipProbabilty())+" %");
+        windSpeedLabel.setText((head.getWindSpeed())+" m/s");
         arrow.setRotate(90+head.getWindDirection());
 
         switch (head.getWeatherCode()) {
@@ -229,13 +229,13 @@ public class DailyController {
             head=head.next;
         }
         tempLabel.setText((head.getMeanTemp())+" °C");
-        maxTempLabel.setText("Max Temperature: "+(head.getMaxTemp())+" °C");
-        minTempLabel.setText("Min Temperature: "+(head.getMinTemp())+" °C");
-        maxApperantTempLabel.setText("Max Apperant Temperature: "+(head.getApparentMaxTemp())+" °C");
-        minApperantTempLabel.setText("Min Apperant Temperature: "+(head.getApparentMinTemp())+" °C");
-        apperantTempLabel.setText("Apperant Temperature: "+(head.getApparentMeanTemp())+" °C");
-        precipitationLabel.setText("Precipitation Probability: "+(head.getPrecipProbabilty()));
-        windSpeedLabel.setText("Wind Speed: "+(head.getWindSpeed()));
+        maxTempLabel.setText((head.getMaxTemp())+" °C");
+        minTempLabel.setText((head.getMinTemp())+" °C");
+        maxApperantTempLabel.setText((head.getApparentMaxTemp())+" °C");
+        minApperantTempLabel.setText((head.getApparentMinTemp())+" °C");
+        apperantTempLabel.setText((head.getApparentMeanTemp())+" °C");
+        precipitationLabel.setText((head.getPrecipProbabilty())+" %");
+        windSpeedLabel.setText((head.getWindSpeed())+" m/s");
         arrow.setRotate(90+head.getWindDirection());
         switch (head.getWeatherCode()) {
             case 0:
@@ -315,13 +315,13 @@ public class DailyController {
             head=head.next;
         }
         tempLabel.setText((head.getMeanTemp())+" °C");
-        maxTempLabel.setText("Max Temperature: "+(head.getMaxTemp())+" °C");
-        minTempLabel.setText("Min Temperature: "+(head.getMinTemp())+" °C");
-        maxApperantTempLabel.setText("Max Apperant Temperature: "+(head.getApparentMaxTemp())+" °C");
-        minApperantTempLabel.setText("Min Apperant Temperature: "+(head.getApparentMinTemp())+" °C");
-        apperantTempLabel.setText("Apperant Temperature: "+(head.getApparentMeanTemp())+" °C");
-        precipitationLabel.setText("Precipitation Probability: "+(head.getPrecipProbabilty()));
-        windSpeedLabel.setText("Wind Speed: "+(head.getWindSpeed()));
+        maxTempLabel.setText((head.getMaxTemp())+" °C");
+        minTempLabel.setText((head.getMinTemp())+" °C");
+        maxApperantTempLabel.setText((head.getApparentMaxTemp())+" °C");
+        minApperantTempLabel.setText((head.getApparentMinTemp())+" °C");
+        apperantTempLabel.setText((head.getApparentMeanTemp())+" °C");
+        precipitationLabel.setText((head.getPrecipProbabilty())+" %");
+        windSpeedLabel.setText((head.getWindSpeed())+" m/s");
         arrow.setRotate(90+head.getWindDirection());
         switch (head.getWeatherCode()) {
             case 0:
@@ -400,13 +400,13 @@ public class DailyController {
             head=head.next;
         }
         tempLabel.setText((head.getMeanTemp())+" °C");
-        maxTempLabel.setText("Max Temperature: "+(head.getMaxTemp())+" °C");
-        minTempLabel.setText("Min Temperature: "+(head.getMinTemp())+" °C");
-        maxApperantTempLabel.setText("Max Apperant Temperature: "+(head.getApparentMaxTemp())+" °C");
-        minApperantTempLabel.setText("Min Apperant Temperature: "+(head.getApparentMinTemp())+" °C");
-        apperantTempLabel.setText("Apperant Temperature: "+(head.getApparentMeanTemp())+" °C");
-        precipitationLabel.setText("Precipitation Probability: "+(head.getPrecipProbabilty()));
-        windSpeedLabel.setText("Wind Speed: "+(head.getWindSpeed()));
+        maxTempLabel.setText((head.getMaxTemp())+" °C");
+        minTempLabel.setText((head.getMinTemp())+" °C");
+        maxApperantTempLabel.setText((head.getApparentMaxTemp())+" °C");
+        minApperantTempLabel.setText((head.getApparentMinTemp())+" °C");
+        apperantTempLabel.setText((head.getApparentMeanTemp())+" °C");
+        precipitationLabel.setText((head.getPrecipProbabilty())+" %");
+        windSpeedLabel.setText((head.getWindSpeed())+" m/s");
         arrow.setRotate(90+head.getWindDirection());
         switch (head.getWeatherCode()) {
             case 0:
@@ -486,13 +486,13 @@ public class DailyController {
         }
 
         tempLabel.setText((head.getMeanTemp())+" °C");
-        maxTempLabel.setText("Max Temperature: "+(head.getMaxTemp())+" °C");
-        minTempLabel.setText("Min Temperature: "+(head.getMinTemp())+" °C");
-        maxApperantTempLabel.setText("Max Apperant Temperature: "+(head.getApparentMaxTemp())+" °C");
-        minApperantTempLabel.setText("Min Apperant Temperature: "+(head.getApparentMinTemp())+" °C");
-        apperantTempLabel.setText("Apperant Temperature: "+(head.getApparentMeanTemp())+" °C");
-        precipitationLabel.setText("Precipitation Probability: "+(head.getPrecipProbabilty()));
-        windSpeedLabel.setText("Wind Speed: "+(head.getWindSpeed()));
+        maxTempLabel.setText((head.getMaxTemp())+" °C");
+        minTempLabel.setText((head.getMinTemp())+" °C");
+        maxApperantTempLabel.setText((head.getApparentMaxTemp())+" °C");
+        minApperantTempLabel.setText((head.getApparentMinTemp())+" °C");
+        apperantTempLabel.setText((head.getApparentMeanTemp())+" °C");
+        precipitationLabel.setText((head.getPrecipProbabilty())+" %");
+        windSpeedLabel.setText((head.getWindSpeed())+" m/s");
         arrow.setRotate(90+head.getWindDirection());
         switch (head.getWeatherCode()) {
             case 0:
@@ -571,13 +571,13 @@ public class DailyController {
             head=head.next;
         }
         tempLabel.setText((head.getMeanTemp())+" °C");
-        maxTempLabel.setText("Max Temperature: "+(head.getMaxTemp())+" °C");
-        minTempLabel.setText("Min Temperature: "+(head.getMinTemp())+" °C");
-        maxApperantTempLabel.setText("Max Apperant Temperature: "+(head.getApparentMaxTemp())+" °C");
-        minApperantTempLabel.setText("Min Apperant Temperature: "+(head.getApparentMinTemp())+" °C");
-        apperantTempLabel.setText("Apperant Temperature: "+(head.getApparentMeanTemp())+" °C");
-        precipitationLabel.setText("Precipitation Probability: "+(head.getPrecipProbabilty()));
-        windSpeedLabel.setText("Wind Speed: "+(head.getWindSpeed()));
+        maxTempLabel.setText((head.getMaxTemp())+" °C");
+        minTempLabel.setText((head.getMinTemp())+" °C");
+        maxApperantTempLabel.setText((head.getApparentMaxTemp())+" °C");
+        minApperantTempLabel.setText((head.getApparentMinTemp())+" °C");
+        apperantTempLabel.setText((head.getApparentMeanTemp())+" °C");
+        precipitationLabel.setText((head.getPrecipProbabilty())+" %");
+        windSpeedLabel.setText((head.getWindSpeed())+" m/s");
         arrow.setRotate(90+head.getWindDirection());
         switch (head.getWeatherCode()) {
             case 0:
@@ -656,13 +656,13 @@ public class DailyController {
             head=head.next;
         }
         tempLabel.setText((head.getMeanTemp())+" °C");
-        maxTempLabel.setText("Max Temperature: "+(head.getMaxTemp())+" °C");
-        minTempLabel.setText("Min Temperature: "+(head.getMinTemp())+" °C");
-        maxApperantTempLabel.setText("Max Apperant Temperature: "+(head.getApparentMaxTemp())+" °C");
-        minApperantTempLabel.setText("Min Apperant Temperature: "+(head.getApparentMinTemp())+" °C");
-        apperantTempLabel.setText("Apperant Temperature: "+(head.getApparentMeanTemp())+" °C");
-        precipitationLabel.setText("Precipitation Probability: "+(head.getPrecipProbabilty()));
-        windSpeedLabel.setText("Wind Speed: "+(head.getWindSpeed()));
+        maxTempLabel.setText((head.getMaxTemp())+" °C");
+        minTempLabel.setText((head.getMinTemp())+" °C");
+        maxApperantTempLabel.setText((head.getApparentMaxTemp())+" °C");
+        minApperantTempLabel.setText((head.getApparentMinTemp())+" °C");
+        apperantTempLabel.setText((head.getApparentMeanTemp())+" °C");
+        precipitationLabel.setText((head.getPrecipProbabilty())+" %");
+        windSpeedLabel.setText((head.getWindSpeed())+" m/s");
         arrow.setRotate(90+head.getWindDirection());
         switch (head.getWeatherCode()) {
             case 0:

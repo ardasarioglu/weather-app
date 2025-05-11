@@ -85,9 +85,9 @@ public class HomeController {
 
             WeatherNode currentWeather=new WeatherNode(weatherCode, windDirection, temp, apparentTemp, windSpeed, precipitation);
             tempLabel.setText(currentWeather.getMeanTemp()+"°C");
-            apperantTempLabel.setText("Apperant Temperature: "+currentWeather.getApparentMeanTemp()+"°C");
-            precipitationLabel.setText("Precipitation Probability: %"+currentWeather.getPrecipProbabilty());
-            windSpeedLabel.setText("Wind Speed: "+currentWeather.getWindSpeed()+" km/h");
+            apperantTempLabel.setText(currentWeather.getApparentMeanTemp()+"°C");
+            precipitationLabel.setText(currentWeather.getPrecipProbabilty()+" %");
+            windSpeedLabel.setText(currentWeather.getWindSpeed()+" m/s");
             arrow.setRotate(90+currentWeather.getWindDirection());
             switch (currentWeather.getWeatherCode()) {
                 case 0:
@@ -176,9 +176,9 @@ public class HomeController {
 
         WeatherNode currentWeather=new WeatherNode(weatherCode, windDirection, temp, apparentTemp, windSpeed, precipitation);
         tempLabel.setText(currentWeather.getMeanTemp()+"°C");
-        apperantTempLabel.setText("Apperant Temperature: "+currentWeather.getApparentMeanTemp()+"°C");
-        precipitationLabel.setText("Precipitation Probability: %"+currentWeather.getPrecipProbabilty());
-        windSpeedLabel.setText("Wind Speed: "+currentWeather.getWindSpeed()+" km/h");
+        apperantTempLabel.setText(currentWeather.getApparentMeanTemp()+"°C");
+        precipitationLabel.setText(currentWeather.getPrecipProbabilty()+" %");
+        windSpeedLabel.setText(currentWeather.getWindSpeed()+" m/s");
         arrow.setRotate(90+currentWeather.getWindDirection());
         switch (currentWeather.getWeatherCode()) {
             case 0:
