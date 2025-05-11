@@ -45,7 +45,7 @@
       </HBox>
       <AnchorPane layoutX="-7.0" layoutY="6.0" prefHeight="680.0" prefWidth="457.0" styleClass="anchor-pane" stylesheets="@style.css">
          <children>
-            <TextField fx:id="searchField" layoutX="14.0" layoutY="14.0" prefHeight="44.0" prefWidth="297.0" promptText="Search City:" styleClass="search-field" stylesheets="@style.css">
+            <TextField fx:id="searchField" layoutX="14.0" layoutY="14.0" onAction="#search" prefHeight="44.0" prefWidth="297.0" promptText="Search City:" styleClass="search-field" stylesheets="@style.css">
                <font>
                   <Font name="Nunito Regular" size="21.0" />
                </font>
