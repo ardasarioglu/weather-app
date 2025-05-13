@@ -21,8 +21,6 @@ import java.io.IOException;
 import java.time.DayOfWeek;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
-import java.util.ArrayList;
-import java.util.List;
 
 public class HourlyController {
     Stage stage;
@@ -65,13 +63,13 @@ public class HourlyController {
     }
 
 
-    public QueueNode tumAnchorPaneleriBul(Node root) {
-        QueueNode sonuc = new QueueNode();
+    public Queue tumAnchorPaneleriBul(Node root) {
+        Queue sonuc = new Queue();
         tumAnchorPaneleriBulRecursive(root, sonuc);
         return sonuc;
     }
 
-    private void tumAnchorPaneleriBulRecursive(Node node, QueueNode sonuc) {
+    private void tumAnchorPaneleriBulRecursive(Node node, Queue sonuc) {
         if (node instanceof AnchorPane) {
             sonuc.add((AnchorPane) node);  // Eğer AnchorPane ise, listeye ekleyelim
         }
@@ -112,9 +110,9 @@ public class HourlyController {
             JSONArray apparentTemperatures=hourly.getJSONArray("apparent_temperature");
             JSONArray preciProbabs=hourly.getJSONArray("precipitation_probability");
             JSONArray windDirections=hourly.getJSONArray("wind_direction_10m");
-            Queue queue=new Queue();
+            LinkedList linkedList =new LinkedList();
             for(int i=0;i<72;i++){
-                queue.addNode(new WeatherNode(times.getString(i), weatherCodes.getInt(i), windDirections.getInt(i), temperatures.getDouble(i), apparentTemperatures.getDouble(i), windSpeeds.getDouble(i), preciProbabs.getDouble(i)));
+                linkedList.addNode(new WeatherNode(times.getString(i), weatherCodes.getInt(i), windDirections.getInt(i), temperatures.getDouble(i), apparentTemperatures.getDouble(i), windSpeeds.getDouble(i), preciProbabs.getDouble(i)));
             }
             String dateStr1=times.getString(0);
             String dateStr2=times.getString(24);
@@ -160,8 +158,8 @@ public class HourlyController {
 
 
 
-            WeatherNode head1=queue.getHead();
-            QueueNode panes=tumAnchorPaneleriBul(vbox);
+            WeatherNode head1= linkedList.getHead();
+            Queue panes=tumAnchorPaneleriBul(vbox);
             NodeAnchor head2=panes.getHead();
 
             while(head2!=null && head1!=null){
@@ -316,7 +314,7 @@ public class HourlyController {
                     }
                 }
                 head1=head1.next;
-                head2=head2.next;
+                head2=panes.getHead();
             }
 
 
