@@ -160,7 +160,7 @@ public class HourlyController {
 
             WeatherNode head1= linkedList.getHead();
             Queue panes=tumAnchorPaneleriBul(vbox);
-            NodeAnchor head2=panes.getHead();
+            NodeAnchor head2=panes.pop();
 
             while(head2!=null && head1!=null){
                 AnchorPane anchorPane=head2.data;
@@ -314,7 +314,7 @@ public class HourlyController {
                     }
                 }
                 head1=head1.next;
-                head2=panes.getHead();
+                head2=panes.pop();
             }
 
 

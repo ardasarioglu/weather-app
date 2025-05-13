@@ -19,7 +19,7 @@ public class Queue {
         }
     }
 
-    public NodeAnchor getHead(){
+    public NodeAnchor pop(){
         if(head==null){
             return null;
         }
