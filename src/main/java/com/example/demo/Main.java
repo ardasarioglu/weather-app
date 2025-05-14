@@ -29,7 +29,7 @@ public class Main extends Application {
             stage.setScene(scene);
             stage.setResizable(false);
 
-            stage.setTitle("weather app");
+            stage.setTitle("Weather App");
             Image icon = new Image(getClass().getResourceAsStream("/icon.png"));
             stage.getIcons().add(icon);
 

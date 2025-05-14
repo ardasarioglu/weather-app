@@ -1,27 +1,32 @@
 package com.example.demo;
 
-public class Queue {
-    WeatherNode head=null;
+import javafx.scene.layout.AnchorPane;
 
-    public void addNode(WeatherNode newNode){
-        if(head==null){head=newNode;
+public class Queue {
+    NodeAnchor head=null;
+
+    public void add(AnchorPane data){
+        NodeAnchor newNode=new NodeAnchor(data);
+        if(head==null){
+            head=newNode;
         }
         else{
-            WeatherNode temp=head;
+            NodeAnchor temp=head;
             while(temp.next!=null){
                 temp=temp.next;
             }
             temp.next=newNode;
         }
     }
-    public void clear(){head=null;}
 
-    public WeatherNode getHead(){
-        return head;
+    public NodeAnchor pop(){
+        if(head==null){
+            return null;
+        }
+        NodeAnchor tail=head;
+        head=head.next;
+        return tail;
     }
-
-
-
 
 
 }

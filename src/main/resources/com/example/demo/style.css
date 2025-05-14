@@ -47,3 +47,6 @@
     -fx-border-width: 1px;
     -fx-border-radius: 10px;
 }
+.label-bold{
+    -fx-font-weight: bold;
+}

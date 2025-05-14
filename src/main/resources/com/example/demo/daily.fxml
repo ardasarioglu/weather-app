@@ -8,6 +8,7 @@
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.HBox?>
+<?import javafx.scene.shape.Line?>
 <?import javafx.scene.text.Font?>
 
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="450.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo.DailyController">
@@ -120,51 +121,89 @@
                </font>
             </Label>
             <ImageView fx:id="view1" fitHeight="150.0" fitWidth="176.0" layoutX="21.0" layoutY="55.0" pickOnBounds="true" preserveRatio="true" />
-            <Label fx:id="apperantTempLabel" layoutX="21.0" layoutY="356.0" prefHeight="24.0" prefWidth="285.0" text="Apperant Temperature: --">
+            <Label layoutX="21.0" layoutY="410.0" prefHeight="55.0" prefWidth="144.0" text="Apperant Temperature" wrapText="true">
                <font>
                   <Font name="Nunito Regular" size="16.0" />
                </font>
             </Label>
-            <Label fx:id="precipitationLabel" layoutX="21.0" layoutY="380.0" prefHeight="24.0" prefWidth="267.0" text="Precipitation Probabilty: --">
+            <Label layoutX="261.0" layoutY="410.0" prefHeight="55.0" prefWidth="156.0" text="Precipitation Probabilty" wrapText="true">
                <font>
                   <Font name="Nunito Regular" size="16.0" />
                </font>
             </Label>
-            <Label fx:id="windSpeedLabel" layoutX="21.0" layoutY="404.0" prefHeight="24.0" prefWidth="217.0" text="Wind Speed: --">
+            <Label layoutX="21.0" layoutY="500.0" prefHeight="24.0" prefWidth="95.0" text="Wind Speed">
                <font>
                   <Font name="Nunito Regular" size="16.0" />
                </font>
             </Label>
-            <Label fx:id="windDirectionLabel" layoutX="21.0" layoutY="428.0" prefHeight="24.0" prefWidth="116.0" text="Wind Direction:">
+            <Label fx:id="windDirectionLabel" layoutX="261.0" layoutY="500.0" prefHeight="24.0" prefWidth="116.0" text="Wind Direction">
                <font>
                   <Font name="Nunito Regular" size="16.0" />
                </font>
             </Label>
-            <Label fx:id="maxTempLabel" layoutX="21.0" layoutY="260.0" prefHeight="24.0" prefWidth="285.0" text="Max Temperature: --">
+            <Label layoutX="21.0" layoutY="260.0" prefHeight="24.0" prefWidth="135.0" text="Max Temperature">
                <font>
                   <Font name="Nunito Regular" size="16.0" />
                </font>
             </Label>
-            <Label fx:id="minTempLabel" layoutX="21.0" layoutY="284.0" prefHeight="24.0" prefWidth="285.0" text="Min Temperature: --">
+            <Label layoutX="261.0" layoutY="260.0" prefHeight="24.0" prefWidth="127.0" text="Min Temperature">
                <font>
                   <Font name="Nunito Regular" size="16.0" />
                </font>
             </Label>
-            <Label fx:id="maxApperantTempLabel" layoutX="21.0" layoutY="308.0" prefHeight="24.0" prefWidth="285.0" text="Max Apperant Temperature: --">
+            <Label layoutX="21.0" layoutY="320.0" prefHeight="55.0" prefWidth="156.0" text="Max Apperant Temperature" wrapText="true">
                <font>
                   <Font name="Nunito Regular" size="16.0" />
                </font>
             </Label>
-            <Label fx:id="minApperantTempLabel" layoutX="21.0" layoutY="332.0" prefHeight="24.0" prefWidth="285.0" text="Min Apperant Temperature: --">
+            <Label layoutX="261.0" layoutY="320.0" prefHeight="55.0" prefWidth="116.0" text="Min Apperant Temperature" wrapText="true">
                <font>
                   <Font name="Nunito Regular" size="16.0" />
                </font>
             </Label>
-            <ImageView fx:id="arrow" fitHeight="21.0" fitWidth="19.0" layoutX="135.0" layoutY="433.0" pickOnBounds="true" preserveRatio="true" rotate="90.0">
+            <ImageView fx:id="arrow" fitHeight="21.0" fitWidth="19.0" layoutX="261.0" layoutY="536.0" pickOnBounds="true" preserveRatio="true" rotate="90.0">
                <image>
                   <Image url="@images/arrow.png" />
                </image>
             </ImageView>
+            <Label fx:id="maxTempLabel" layoutX="21.0" layoutY="284.0" styleClass="label-bold" stylesheets="@style.css" text="--">
+               <font>
+                  <Font name="Nunito Regular" size="21.0" />
+               </font>
+            </Label>
+            <Label fx:id="minTempLabel" layoutX="261.0" layoutY="284.0" styleClass="label-bold" stylesheets="@style.css" text="--">
+               <font>
+                  <Font name="Nunito Regular" size="21.0" />
+               </font>
+            </Label>
+            <Label fx:id="maxApperantTempLabel" layoutX="21.0" layoutY="375.0" styleClass="label-bold" stylesheets="@style.css" text="--">
+               <font>
+                  <Font name="Nunito Regular" size="21.0" />
+               </font>
+            </Label>
+            <Label fx:id="minApperantTempLabel" layoutX="260.0" layoutY="375.0" styleClass="label-bold" stylesheets="@style.css" text="--">
+               <font>
+                  <Font name="Nunito Regular" size="21.0" />
+               </font>
+            </Label>
+            <Label fx:id="apperantTempLabel" layoutX="21.0" layoutY="465.0" styleClass="label-bold" stylesheets="@style.css" text="--">
+               <font>
+                  <Font name="Nunito Regular" size="21.0" />
+               </font>
+            </Label>
+            <Label fx:id="precipitationLabel" layoutX="260.0" layoutY="465.0" styleClass="label-bold" stylesheets="@style.css" text="--">
+               <font>
+                  <Font name="Nunito Regular" size="21.0" />
+               </font>
+            </Label>
+            <Label fx:id="windSpeedLabel" layoutX="21.0" layoutY="530.0" styleClass="label-bold" stylesheets="@style.css" text="--">
+               <font>
+                  <Font name="Nunito Regular" size="21.0" />
+               </font>
+            </Label>
+            <Line endX="270.0" layoutX="155.0" layoutY="315.0" startX="-134.0" />
+            <Line endX="270.0" layoutX="155.0" layoutY="406.0" startX="-134.0" />
+            <Line endX="270.0" layoutX="157.0" layoutY="496.0" startX="-134.0" />
          </children>
       </AnchorPane>
    </children>
