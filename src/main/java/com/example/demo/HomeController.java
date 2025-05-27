@@ -8,17 +8,24 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Alert;
 import javafx.scene.control.Label;
+import javafx.scene.control.ListView;
 import javafx.scene.control.TextField;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.stage.Stage;
 import org.json.*;
 
+import java.io.File;
 import java.io.IOException;
+import java.io.InputStream;
 import java.net.URI;
 import java.net.http.HttpClient;
 import java.net.http.HttpRequest;
 import java.net.http.HttpResponse;
+import java.nio.file.Files;
+import java.nio.file.Paths;
+import java.util.List;
+import java.util.Scanner;
 
 public class HomeController {
     Stage stage;
@@ -42,9 +49,64 @@ public class HomeController {
     Label windDirectionLabel;
     @FXML
     ImageView arrow;
+    @FXML
+    private ListView<String> suggestionList;
+
+    private ListView<String> searchResults;
+
+    private final CityTree cityTree = new CityTree();
 
 
     private JSONObject weatherJSON;
+
+
+    @FXML
+    public void initialize() {
+        loadCitiesFromFile();
+
+        searchField.textProperty().addListener((observable, oldValue, newValue) -> {
+            if (newValue.length() >= 1) {
+                List<String> results = cityTree.searchPrefix(newValue);
+                suggestionList.getItems().setAll(results);
+                suggestionList.setVisible(!results.isEmpty());
+            } else {
+                suggestionList.setVisible(false);
+            }
+        });
+    }
+
+    private void loadCitiesFromFile() {
+        try {
+            InputStream inputStream = getClass().getResourceAsStream("/turkiye.txt");
+            if (inputStream != null) {
+                Scanner scanner = new Scanner(inputStream);
+                while (scanner.hasNextLine()) {
+                    String city = scanner.nextLine().trim();
+                    if (!city.isEmpty()) {
+                        cityTree.insert(city);
+                    }
+                }
+                scanner.close();
+            } else {
+                System.err.println("turkiye.txt dosyası bulunamadı!");
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+            System.err.println("Şehir dosyası yüklenirken hata: " + e.getMessage());
+        }
+    }
+
+    @FXML
+    public void handleSuggestionClick() throws IOException, InterruptedException {
+        String selected = suggestionList.getSelectionModel().getSelectedItem();
+        if (selected != null) {
+            searchField.setText(selected);
+            suggestionList.setVisible(false);
+            search();
+        }
+    }
+
+
 
     public void setWeatherJSON(JSONObject weatherJSON){
         this.weatherJSON=weatherJSON;

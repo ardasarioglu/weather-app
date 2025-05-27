@@ -71,25 +71,25 @@ public class HourlyController {
 
     private void tumAnchorPaneleriBulRecursive(Node node, Queue sonuc) {
         if (node instanceof AnchorPane) {
-            sonuc.add((AnchorPane) node);  // Eğer AnchorPane ise, listeye ekleyelim
+            sonuc.add((AnchorPane) node);
         }
 
         if (node instanceof Parent) {
             for (Node child : ((Parent) node).getChildrenUnmodifiable()) {
-                tumAnchorPaneleriBulRecursive(child, sonuc);  // Çocuk düğümlere recursive olarak inelim
+                tumAnchorPaneleriBulRecursive(child, sonuc);
             }
         }
 
         if (node instanceof Accordion) {
             for (Node child : ((Accordion) node).getPanes()) {
-                tumAnchorPaneleriBulRecursive(child, sonuc);  // Accordion içindeki TitledPane'leri kontrol et
+                tumAnchorPaneleriBulRecursive(child, sonuc);
             }
         }
 
         if (node instanceof TitledPane) {
             Node content = ((TitledPane) node).getContent();
             if (content != null) {
-                tumAnchorPaneleriBulRecursive(content, sonuc);  // TitledPane içindeki içeriği kontrol et
+                tumAnchorPaneleriBulRecursive(content, sonuc);
             }
         }
     }
